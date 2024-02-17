@@ -1,0 +1,39 @@
+- test1
+    - testName    
+    - question1
+        - question
+            - headerTxt
+            - codeBlock
+            - footerTxt
+        - answers
+            - letter
+            - answerTxt
+            - isCodeBlock
+
+
+Feats: 
+
+- Select test 
+- Random test 
+- Score results
+- show correct answer after submit
+
+- Front page
+    - Test name with selectable pills
+- test page 
+
+TODO:
+
+- Setup routing
+    - try using the object way
+- Make test select page route to test page 
+- Make a back button on test page go back test select 
+- Design
+    - Mock out app shell
+    - Mock out test select screen
+    - Mock out test page
+- Functionality
+    - test object is selected depending on test that was selected
+        - might use the :testName parttern in the routing to grab the test name using the useLocation hook
+    - Might make tests selectable from test select screen
+
