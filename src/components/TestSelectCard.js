@@ -17,8 +17,8 @@ const TestSelectCard = ({ image, title, description }) => {
       <CardBody>
         <Image
           src={image}
-          maxW="sm"
-          boxSize="200px"
+          size="lg"
+          boxSize={["130px", "150px", "200px", "200px"]}
           objectFit="cover"
           align="center"
           alt="Green double couch with wooden legs"

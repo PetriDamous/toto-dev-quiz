@@ -33,7 +33,7 @@ const TestSelectCardList = () => {
   ));
 
   return (
-    <SimpleGrid columns={3} spacing={10}>
+    <SimpleGrid columns={[1, 1, 2, 3]} spacing={10}>
       {testSelect}
     </SimpleGrid>
   );
