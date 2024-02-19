@@ -2,7 +2,7 @@ import { Container } from "@chakra-ui/react";
 
 const Layout = ({ children }) => {
   return (
-    <Container maxW="container.xl" p={0} bg="gray.400" h="100vh" centerContent>
+    <Container my={10} maxW="container.xl" centerContent>
       {children}
     </Container>
   );
