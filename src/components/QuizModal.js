@@ -20,10 +20,10 @@ const QuizModal = ({ isOpen, onClose }) => {
     >
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader>Modal Title</ModalHeader>
+        <ModalHeader>Test Name</ModalHeader>
         <ModalCloseButton />
         <ModalBody>
-          <QuizModalBodyContent />
+          <QuizModalBodyContent closeModal={onClose} />
         </ModalBody>
         <ModalFooter>
           <QuizModalFooterContent />
