@@ -11,7 +11,7 @@ import {
   Button,
 } from "@chakra-ui/react";
 
-const TestSelectCard = ({ image, title, description }) => {
+const TestSelectCard = ({ onOpen, image, title, description }) => {
   return (
     <Card maxW="sm">
       <CardBody>
@@ -32,7 +32,7 @@ const TestSelectCard = ({ image, title, description }) => {
       <Divider />
       <CardFooter>
         <ButtonGroup spacing="2">
-          <Button variant="solid" colorScheme="blue">
+          <Button variant="solid" colorScheme="blue" onClick={onOpen}>
             Take Quiz
           </Button>
         </ButtonGroup>

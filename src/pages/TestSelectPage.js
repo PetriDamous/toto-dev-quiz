@@ -1,7 +1,14 @@
-import { TestSelectCardList } from "../components";
+import { QuizModal, TestSelectCardList } from "../components";
+import { useDisclosure } from "@chakra-ui/react";
 
 const TestSelectPage = () => {
-  return <TestSelectCardList />;
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  return (
+    <>
+      <TestSelectCardList onOpen={onOpen} />
+      <QuizModal isOpen={isOpen} onClose={onClose} />
+    </>
+  );
 };
 
 export default TestSelectPage;

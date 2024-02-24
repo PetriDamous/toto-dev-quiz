@@ -8,7 +8,7 @@ import javaScriptLogoPath from "../logos/javascript-1.svg";
 import javaScriptPatternsLogoPath from "../logos/javascript-2.svg";
 import reactLogoPath from "../logos/react-1.svg";
 
-const TestSelectCardList = () => {
+const TestSelectCardList = ({ onOpen }) => {
   const testSelectCardsProps = [
     {
       id: 1,
@@ -55,7 +55,11 @@ const TestSelectCardList = () => {
   ];
 
   const testSelect = testSelectCardsProps.map((testSelectCardsProp) => (
-    <TestSelectCard key={testSelectCardsProp.id} {...testSelectCardsProp} />
+    <TestSelectCard
+      key={testSelectCardsProp.id}
+      onOpen={onOpen}
+      {...testSelectCardsProp}
+    />
   ));
 
   return (
