@@ -1,5 +1,4 @@
 import { SimpleGrid } from "@chakra-ui/react";
-import { Link } from "wouter";
 import { TestSelectCard } from ".";
 import apolloLogoPath from "../logos/apollo-graphql-compact.svg";
 import gitLogoPath from "../logos/git-icon.svg";
