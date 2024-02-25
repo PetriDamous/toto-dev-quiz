@@ -5,9 +5,12 @@ import {
   ModalHeader,
   ModalFooter,
   ModalBody,
-  ModalCloseButton,
 } from "@chakra-ui/react";
-import { QuizModalBodyContent, QuizModalFooterContent } from ".";
+import {
+  QuizModalBodyContent,
+  QuizModalFooterContent,
+  QuizModalHeaderContent,
+} from ".";
 
 const QuizModal = ({ isOpen, onClose }) => {
   return (
@@ -20,8 +23,9 @@ const QuizModal = ({ isOpen, onClose }) => {
     >
       <ModalOverlay />
       <ModalContent>
-        <ModalHeader>Test Name</ModalHeader>
-        <ModalCloseButton />
+        <ModalHeader>
+          <QuizModalHeaderContent />
+        </ModalHeader>
         <ModalBody>
           <QuizModalBodyContent closeModal={onClose} />
         </ModalBody>
