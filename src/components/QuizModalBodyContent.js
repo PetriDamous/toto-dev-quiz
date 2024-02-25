@@ -17,38 +17,50 @@ const QuizModalBodyContent = ({ closeModal }) => {
     <>
       <NavigationHeader closeModal={closeModal} onOpen={onOpen} />
       <div style={{ marginBottom: 30 }}>
-        <Text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-          risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
-          ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula
-          massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci
-          nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl
-          sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae,
-          consequat in, pretium a, enim. Pellentesque congue. Ut in risus
-          volutpat libero pharetra tempor. Cras vestibulum bibendum augue.
-          Praesent egestas leo in pede. Praesent blandit odio eu enim.
-          Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum
-          primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-          Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum.
-          Maecenas adipiscing ante non diam sodales hendrerit.
-        </Text>
+        <Question />
       </div>
-
       <VStack spacing={4} w="100%">
-        <Box bg="tomato" w="100%" p={4} color="white">
-          This is the Box
-        </Box>
-        <Box bg="tomato" w="100%" p={4} color="white">
-          This is the Box
-        </Box>
-        <Box bg="tomato" w="100%" p={4} color="white">
-          This is the Box
-        </Box>
-        <Box bg="tomato" w="100%" p={4} color="white">
-          This is the Box
-        </Box>
+        <Answers />
       </VStack>
       <QuizOptions isOpen={isOpen} onClose={onClose} />
+    </>
+  );
+};
+
+const Question = () => {
+  return (
+    <Text>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.
+      Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies
+      sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a,
+      semper congue, euismod non, mi. Proin porttitor, orci nec nonummy
+      molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.
+      Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a,
+      enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor.
+      Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent
+      blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales.
+      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+      cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque
+      fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+    </Text>
+  );
+};
+
+const Answers = () => {
+  return (
+    <>
+      <Box bg="tomato" w="100%" p={4} color="white">
+        This is the Box
+      </Box>
+      <Box bg="tomato" w="100%" p={4} color="white">
+        This is the Box
+      </Box>
+      <Box bg="tomato" w="100%" p={4} color="white">
+        This is the Box
+      </Box>
+      <Box bg="tomato" w="100%" p={4} color="white">
+        This is the Box
+      </Box>
     </>
   );
 };
