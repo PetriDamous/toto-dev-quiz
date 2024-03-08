@@ -755,7 +755,9 @@ const test1 = {
   ],
 };
 
-export default {
+const exportObj = {
   name: "JavaScript",
   tests: [test1],
 };
+
+export default exportObj;

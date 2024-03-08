@@ -623,7 +623,9 @@ const test1 = {
   ],
 };
 
-export default {
+const exportObj = {
   name: "Graphql",
   tests: [test1],
 };
+
+export default exportObj;
